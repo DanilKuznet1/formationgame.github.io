@@ -1,0 +1,4489 @@
+:root {
+  --gold-color-amira-official: #fc3;
+  --white-color-amira-official: #f2f2f2;
+
+  --white-color: #f2f2f2;
+  --gold-color: #ffb100;
+  --black-color: #231f20;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+html { 
+  /*background: url(img2.png) no-repeat center center fixed;*/
+  /*background: url(Background\ copy.png) no-repeat center center fixed;*/
+  /*-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+  background-image: -webkit-linear-gradient(top, #0C93C0, #FFF); 
+background-image:    -moz-linear-gradient(top, #0C93C0, #FFF); 
+background-image:     -ms-linear-gradient(top, #0C93C0, #FFF); 
+background-image:      -o-linear-gradient(top, #0C93C0, #FFF); 
+background-image:         linear-gradient(top, #0C93C0, #FFF);
+  z-index: -2;
+  scroll-behavior: auto !important;
+}
+
+/*.path-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 1;
+}*/
+
+
+/*.img1 {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  z-index: -2;
+}
+
+.img2 {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}*/
+
+
+body {
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+
+  scrollbar-width: thin;          /* "auto" or "thin" */
+  scrollbar-color: blue orange; 
+  
+}
+
+.container {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  position: relative;
+
+  display: grid;
+  grid-template-columns: repeat(10, 102.4px);
+  grid-template-rows: repeat(22, 102.4px);
+
+}
+
+.header-text {
+  font-size: 20px;
+}
+
+
+.num {
+  font-size: 24px;
+  color: var(--black-color);
+  background-color:#174b65;
+  letter-spacing: -1.5%;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+
+  border: none;
+  border: 1px solid #ffcc33;
+  box-sizing: border-box;
+
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.num:hover {
+  transform: scale(1.25);
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.num:focus,
+.num:active {
+  background-color: #1c5a7a;
+}
+
+.stop-sign:hover {
+  transform: scale(1.25);
+}
+.star:hover {
+  transform: scale(1.25);
+}
+
+.circle-style {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #477a93;
+}
+
+.arrow5a {
+  position: absolute;
+  top: 2070px;
+  left: 530px;
+  width: auto;
+  height: 90px;
+  transform: rotate(10deg);
+}
+
+.arrow5b {
+  position: absolute;
+  top: 2180px;
+  left: 360px;
+  width: 190px;
+  height: auto;
+  transform: rotate(7deg);
+}
+
+.arrow9b {
+  position: absolute;
+  left: 131px;
+  top: 1611px;
+  width: 150px;
+  height: auto;
+}
+
+.arrow9a {
+  position: absolute;
+  left: 270px;
+  top: 1525px;
+  width: auto;
+  height: 75px;
+  transform: rotate(10deg);
+}
+
+.arrow20b {
+  position: absolute;
+  left: 925px;
+  top: 1265px;
+  width: 55px;
+  height: auto;
+}
+
+.arrow20a {
+  position: absolute;
+  left: 800px;
+  top: 1290px;
+  width: 110px;
+  height: auto;
+  transform: rotate(20deg);
+}
+
+.arrow24b {
+  position: absolute;
+  left: 620px;
+  top: 660px;
+  width: 110px;
+  height: auto;
+  transform: rotate(20deg);
+}
+
+.arrow24a {
+  position: absolute;
+  left: 650px;
+  top: 745px;
+  width: auto;
+  height: 75px;
+  transform: rotate(20deg);
+}
+
+.ladder1 {
+  position: absolute;
+  top: 1774px;
+  left: 409px;
+  width: 135px;
+  height: 230px;
+  transform: rotate(10deg);
+}
+
+.pool1 {
+  position: absolute;
+  top: 1960px;
+  left: -201px;
+  width: 627px;
+  height: 245px;
+}
+
+.diving-board {
+  width: 127px;
+  height: 76px;
+  position: absolute;
+  top: 2080px;
+  left: 150px;
+  transform: rotate(18deg);
+}
+
+/*QUESTION FIX THIS*/
+/*.staircase1 {
+  position: absolute;
+  top: 1733px;
+  left: 221px;
+  width: 160px;
+  height: 320px;
+}*/
+/*QUESTION FIX THIS*/
+.slide1 {
+  position: absolute;
+  top: 1651px;
+  left: -52px;
+
+  width: 235px;
+  height: 326px;
+}
+
+.pool2 {
+  position: absolute;
+  top: 1050px;
+  left: 400px;
+  width: 450px;
+  height: 205px;
+}
+
+.staircase2 {
+  position: absolute;
+  top: 930px;
+  left: 807px;
+  width: 100px;
+  height: 190px;
+  transform: rotate(12deg);
+}
+
+.ladder2 {
+  position: absolute;
+  top: 970px;
+  left: 947px;
+  width: auto;
+  height: 230px;
+}
+
+.water-slide2 {
+  position: absolute;
+  left: 555px;
+  top: 854px;
+  width: 109px;
+  height: 198px;
+}
+
+.diving-board2 {
+  position: absolute;
+  left: 674px;
+  top: 1135px;
+  height: auto;
+  width: 120px;
+}
+
+
+.finish {
+  position: absolute;
+  left: 10px;
+  top: 100px;
+  width: 100px;
+  height: auto;
+}
+
+.start {
+  position: absolute;
+  width: 100px;
+  height: auto;
+  top: 2083px;
+  left: 998px;
+}
+
+
+
+/*START POSITIONING NUMBER 1*/
+
+.new-num-1 {
+  position: absolute;
+  left: 970px;
+  top: 1988px;
+}
+
+.circle-loc-11 {
+  position: absolute;
+  left: 964px;
+  top: 2047px;
+}
+
+.circle-loc-12 {
+  position: absolute;
+  left: 943px;
+  top: 2068px;
+}
+
+.circle-loc-13 {
+  position: absolute;
+  left: 919px;
+  top: 2087px;
+}
+
+/*FINISH POSITIONING NUMBER 1*/
+
+/*START POSITIONING NUMBER 2*/
+
+.new-num-2 {
+  position: absolute;
+  left: 862px;
+  top: 2091px;
+}
+.circle-loc-21 {
+  position: absolute;
+  left: 843px;
+  top: 2137px;
+}
+.circle-loc-22 {
+  position: absolute;
+  left: 818px;
+  top: 2154px;
+}
+.circle-loc-23 {
+  position: absolute;
+  left: 789px;
+  top: 2165px;
+}
+/*FINISH POSITIONING NUMBER 2*/
+
+/*START POSITIONING NUMBER 3*/
+.new-num-3 {
+  position: absolute;
+  left: 728px;
+  top: 2160px;
+}
+.circle-loc-31 {
+  position: absolute;
+  left: 700px;
+  top: 2195px;
+}
+
+.circle-loc-32 {
+  position: absolute;
+  left: 666px;
+  top: 2202px;
+}
+
+.circle-loc-33 {
+  position: absolute;
+  left: 629px;
+  top: 2202px;
+}
+/*FINISH POSITIONING NUMBER 3*/
+
+/*START POSITIONING NEUTRAL NUMBERS*/
+.new-num-4 {
+  position: absolute;
+  left: 569px;
+  top: 2177px;
+}
+
+.new-num-5a {
+  position: absolute;
+  left: 295px;
+  top: 2155px;
+}
+
+.new-num-5b {
+  position: absolute;
+  left: 495px;
+  top: 2027px;
+}
+
+.new-num-6 {
+  position: absolute;
+  left: 32px;
+  top: 2049px;
+}
+
+.new-num-7 {
+  position: absolute;
+  left: 405px;
+  top: 1724px;
+}
+
+.circle-loc-71 {
+  position: absolute;
+  left: 397px;
+  top: 1703px;
+}
+
+.circle-loc-72 {
+  position: absolute;
+  left: 377px;
+  top: 1682px;
+}
+
+.circle-loc-73 {
+  position: absolute;
+  left: 357px;
+  top: 1662px;
+}
+/*FINISH POSITIONING NEUTRAL NUMBERS*/
+
+/*START POSITIONING NUMBER 8*/
+.new-num-8 {
+  position: absolute;
+  left: 303px;
+  top: 1615px;
+}
+/*FINISH POSITIONING NUMBER 8*/
+
+
+.new-num-9a {
+  position: absolute;
+  left: 65px;
+  top: 1587px;
+}
+
+.new-num-9b {
+  position: absolute;
+  left: 230px;
+  top: 1468px;
+}
+.circle-loc-9b1 {
+  position: absolute;
+  left: 219px;
+  top: 1452px;
+}
+
+.circle-loc-9b2 {
+  position: absolute;
+  left: 199px;
+  top: 1434px;
+}
+
+.circle-loc-9b3 {
+  position: absolute;
+  left: 181px;
+  top: 1416px;
+}
+
+.new-num-10 {
+  position: absolute;
+  left: 129px;
+  top: 1368px;
+}
+.circle-loc-101 {
+  position: absolute;
+  left: 110px;
+  top: 1356px;
+}
+
+.circle-loc-102 {
+  position: absolute;
+  left: 92px;
+  top: 1341px;
+}
+
+.circle-loc-103 {
+  position: absolute;
+  left: 78px;
+  top: 1323px;
+}
+
+.new-num-11 {
+  position: absolute;
+  left: 39px;
+  top: 1269px;
+}
+.circle-loc-111 {
+  position: absolute;
+  left: 55px;
+  top: 1244px;
+}
+
+.circle-loc-112 {
+  position: absolute;
+  left: 57px;
+  top: 1220px;
+}
+
+.circle-loc-113 {
+  position: absolute;
+  left: 69px;
+  top: 1199px;
+}
+
+.new-num-12 {
+  position: absolute;
+  left: 84px;
+  top: 1152px;
+}
+.circle-loc-121 {
+  position: absolute;
+  left: 141px;
+  top: 1152px;
+}
+
+.circle-loc-122 {
+  position: absolute;
+  left: 163px;
+  top: 1148px;
+}
+
+.circle-loc-123 {
+  position: absolute;
+  left: 186px;
+  top: 1150px;
+}
+
+.new-num-13 {
+  position: absolute;
+  left: 215px;
+  top: 1147px;
+}
+.circle-loc-131 {
+  position: absolute;
+  left: 274px;
+  top: 1185px;
+}
+
+.circle-loc-132 {
+  position: absolute;
+  left: 301px;
+  top: 1202px;
+}
+
+.new-num-14 {
+  position: absolute;
+  left: 322px;
+  top: 1210px;
+}
+.circle-loc-141 {
+  position: absolute;
+  left: 385px;
+  top: 1259px;
+}
+
+.circle-loc-142 {
+  position: absolute;
+  left: 405px;
+  top: 1277px;
+}
+
+.circle-loc-143 {
+  position: absolute;
+  left: 426px;
+  top: 1296px;
+}
+
+.new-num-15 {
+  position: absolute;
+  left: 437px;
+  top: 1300px;
+}
+.circle-loc-151 {
+  position: absolute;
+  left: 494px;
+  top: 1360px;
+}
+
+.circle-loc-152 {
+  position: absolute;
+  left: 516.12px;
+  top: 1380px;
+}
+
+.circle-loc-153 {
+  position: absolute;
+  left: 538px;
+  top: 1399px;
+}
+
+.new-num-16 {
+  position: absolute;
+  left: 550px;
+  top: 1405px;
+}
+.circle-loc-161 {
+  position: absolute;
+  left: 608px;
+  top: 1455px;
+}
+
+.circle-loc-162 {
+  position: absolute;
+  left: 628px;
+  top: 1470px;
+}
+
+.circle-loc-163 {
+  position: absolute;
+  left: 650px;
+  top: 1484px;
+}
+
+.new-num-17 {
+  position: absolute;
+  left: 673px;
+  top: 1480px;
+}
+.circle-loc-171 {
+  position: absolute;
+  left: 735px;
+  top: 1525px;
+}
+
+.circle-loc-172 {
+  position: absolute;
+  left: 769px;
+  top: 1533px;
+}
+
+.circle-loc-173 {
+  position: absolute;
+  left: 797px;
+  top: 1523px;
+}
+
+.new-num-18 {
+  position: absolute;
+  left: 822px;
+  top: 1474px;
+}
+.circle-loc-181 {
+  position: absolute;
+  left: 875px;
+  top: 1455px;
+}
+
+.circle-loc-182 {
+  position: absolute;
+  left: 897px;
+  top: 1426px;
+}
+
+.new-num-19 {
+  position: absolute;
+  left: 901px;
+  top: 1368px;
+}
+
+.new-num-20a {
+  position: absolute;
+  left: 769px;
+  top: 1222px;
+}
+
+.new-num-20b {
+  position: absolute;
+  left: 943px;
+  top: 1208px;
+}
+
+.new-num-21 {
+  position: absolute;
+  left: 940px;
+  top: 903px;
+}
+.circle-loc-211 {
+  position: absolute;
+  left: 932px;
+  top: 876px;
+}
+
+.circle-loc-212 {
+  position: absolute;
+  left: 914px;
+  top: 852px;
+}
+
+.circle-loc-213 {
+  position: absolute;
+  left: 892px;
+  top: 835px;
+}
+
+.new-num-22 {
+  position: absolute;
+  left: 840px;
+  top: 789px;
+}
+.circle-loc-221 {
+  position: absolute;
+  left: 823px;
+  top: 778px;
+}
+
+.circle-loc-222 {
+  position: absolute;
+  left: 797px;
+  top: 761px;
+}
+
+.new-num-23 {
+  position: absolute;
+  left: 740px;
+  top: 720px;
+}
+
+.new-num-24a {
+  position: absolute;
+  left: 565px;
+  top: 787px;
+}
+
+.new-num-24b {
+  position: absolute;
+  left: 565px;
+  top: 631px;
+}
+.circle-loc-24b1 {
+  position: absolute;
+  left: 536px;
+  top: 641px;
+}
+
+.circle-loc-24b2 {
+  position: absolute;
+  left: 507px;
+  top: 638px;
+}
+.circle-loc-24b3 {
+  position: absolute;
+  left: 480px;
+  top: 634px;
+}
+
+.circle-loc-24b4 {
+  position: absolute;
+  left: 452px;
+  top: 628px;
+}
+
+.new-num-25 {
+  position: absolute;
+  left: 405px;
+  top: 600px;
+}
+.circle-loc-251 {
+  position: absolute;
+  left: 363px;
+  top: 609px;
+}
+.circle-loc-252 {
+  position: absolute;
+  left: 334px;
+  top: 602px;
+}
+
+.circle-loc-253 {
+  position: absolute;
+  left: 303px;
+  top: 594px;
+}
+
+.new-num-26 {
+  position: absolute;
+  left: 253.5px;
+  top: 574px;
+}
+.circle-loc-261 {
+  position: absolute;
+  left: 209px;
+  top: 570px;
+}
+.circle-loc-262 {
+  position: absolute;
+  left: 181px;
+  top: 559px;
+}
+
+.new-num-27 {
+  position: absolute;
+  left: 120px;
+  top: 519px;
+}
+.circle-loc-271 {
+  position: absolute;
+  left: 101px;
+  top: 504px;
+}
+.circle-loc-272 {
+  position: absolute;
+  left: 92px;
+  top: 474px;
+}
+
+.new-num-28 {
+  position: absolute;
+  left: 85px;
+  top: 408px;
+}
+.circle-loc-281 {
+  position: absolute;
+  left: 123px;
+  top: 383px;
+}
+.circle-loc-282 {
+  position: absolute;
+  left: 150px;
+  top: 367px;
+}
+
+.new-num-29 {
+  position: absolute;
+  left: 189.5px;
+  top: 338px;
+}
+.circle-loc-291 {
+  position: absolute;
+  left: 254px;
+  top: 362px;
+}
+.circle-loc-292 {
+  position: absolute;
+  left: 288px;
+  top: 368px;
+}
+
+
+.new-num-30 {
+  position: absolute;
+  left: 320.5px;
+  top: 359px;
+}
+.circle-loc-301 {
+  position: absolute;
+  left: 387px;
+  top: 389px;
+}
+.circle-loc-302 {
+  position: absolute;
+  left: 415px;
+  top: 395px;
+}
+.circle-loc-303 {
+  position: absolute;
+  left: 443px;
+  top: 402px;
+}
+
+.new-num-31 {
+  position: absolute;
+  left: 471px;
+  top: 394px;
+}
+.circle-loc-311 {
+  position: absolute;
+  left: 535px;
+  top: 421px;
+}
+.circle-loc-312 {
+  position: absolute;
+  left: 568px;
+  top: 427px;
+}
+.circle-loc-313 {
+  position: absolute;
+  left: 601px;
+  top: 429px;
+}
+
+.new-num-32 {
+  position: absolute;
+  left: 629px;
+  top: 414px;
+}
+.circle-loc-321 {
+  position: absolute;
+  left: 693px;
+  top: 429px;
+}
+.circle-loc-322 {
+  position: absolute;
+  left: 722px;
+  top: 427px;
+}
+.circle-loc-323 {
+  position: absolute;
+  left: 751px;
+  top: 421px;
+}
+.circle-loc-331 {
+  position: absolute;
+  left: 841px;
+  top: 391px;
+}
+.circle-loc-332 {
+  position: absolute;
+  left: 869px;
+  top: 374px;
+}
+
+.new-num-33 {
+  position: absolute;
+  left: 779.5px;
+  top: 391px;
+}
+.circle-loc-341 {
+  position: absolute;
+  left: 932px;
+  top: 300px;
+}
+.circle-loc-342 {
+  position: absolute;
+  left: 945px;
+  top: 272px;
+}
+
+.new-num-34 {
+  position: absolute;
+  left: 885px;
+  top: 319px;
+}
+.circle-loc-351 {
+  position: absolute;
+  left: 953px;
+  top: 171px;
+}
+.circle-loc-352 {
+  position: absolute;
+  left: 945px;
+  top: 141px;
+}
+
+.new-num-35 {
+  position: absolute;
+  left: 940px;
+  top: 200px;
+}
+.circle-loc-361 {
+  position: absolute;
+  left: 891px;
+  top: 57px;
+}
+.circle-loc-362 {
+  position: absolute;
+  left: 863px;
+  top: 41px;
+}
+
+.new-num-36 {
+  position: absolute;
+  left: 912px;
+  top: 81px;
+}
+.circle-loc-371 {
+  position: absolute;
+  left: 754px;
+  top: 38px;
+}
+.circle-loc-372 {
+  position: absolute;
+  left: 719px;
+  top: 46px;
+}
+
+.new-num-37 {
+  position: absolute;
+  left: 802px;
+  top: 13px;
+}
+.circle-loc-381 {
+  position: absolute;
+  left: 621px;
+  top: 81px;
+}
+.circle-loc-382 {
+  position: absolute;
+  left: 595px;
+  top: 92px;
+}
+.circle-loc-383 {
+  position: absolute;
+  left: 566px;
+  top: 103px;
+}
+
+.new-num-38 {
+  position: absolute;
+  left: 651px;
+  top: 41px;
+}
+.circle-loc-391 {
+  position: absolute;
+  left: 474px;
+  top: 132px;
+}
+.circle-loc-392 {
+  position: absolute;
+  left: 446px;
+  top: 140px;
+}
+.circle-loc-393 {
+  position: absolute;
+  left: 416px;
+  top: 143px;
+}
+.circle-loc-394 {
+  position: absolute;
+  left: 387px;
+  top: 143px;
+}
+
+
+.new-num-39 {
+  position: absolute;
+  left: 488px;
+  top: 103px;
+}
+.circle-loc-401 {
+  position: absolute;
+  left: 296px;
+  top: 128px;
+}
+.circle-loc-402 {
+  position: absolute;
+  left: 269px;
+  top: 121px;
+}
+.circle-loc-403 {
+  position: absolute;
+  left: 245px;
+  top: 112px;
+}
+
+.new-num-40 {
+  position: absolute;
+  left: 350px;
+  top: 120px;
+}
+.circle-loc-411 {
+  position: absolute;
+  left: 158px;
+  top: 80px;
+}
+.circle-loc-412 {
+  position: absolute;
+  left: 131px;
+  top: 69px;
+}
+.circle-loc-413 {
+  position: absolute;
+  left: 108px;
+  top: 54px;
+}
+
+.new-num-41 {
+  position: absolute;
+  left: 185px;
+  top: 78px;
+}
+
+.new-num-42 {
+  position: absolute;
+  left: 50px;
+  top: 9px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a > * {
+  pointer-events: none;
+}
+
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 8px;
+  background: linear-gradient(to right, #ff5f6d, #ffc371);
+  width: 0%;
+  z-index: 300;
+}
+
+/*#modalBtn-42 {
+  position: absolute;
+  top: 100px !important;
+  left: 100px !important;
+}
+#modalBtn-41 {
+  position: absolute;
+  top: 115px !important;
+  left: 115px !important;
+}*/
+
+button:active,
+button:focus {
+  /** Remove Chrome's Ugly Yellow Outline **/
+  outline: 0;
+}
+
+#canvas {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 3;
+}
+
+/*GENERAL STYLES*/
+.item {
+  /*border: 0.1px solid rgba(0, 0, 0, 0.4);*/
+  /*color: var(--black-color);*/
+}
+
+/*.item:nth-child(2n+1) {
+  background-color: yellowgreen;
+}
+
+.item:nth-child(even) {
+  background-color: violet;
+}*/
+
+a {
+  cursor: pointer;
+}
+
+/*#next2 {
+  border: none;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 10px 15px;
+
+
+}*/
+
+/*START STYLING BUTTONS AND CIRCLES*/
+
+.star {
+  width: 55px !important;
+  height: auto !important;
+  z-index: 1;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.stop-sign {
+  width: 55px;
+  height: auto;
+  z-index: 1;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.big-num {
+  font-size: 22px !important;
+}
+
+
+
+.btn-triple {
+  font-size: 32px;
+}
+/*END STYLING BUTTONS AND CIRCLES*/
+
+/*START STYLING HEADER*/
+.header {
+  height: 100%;
+  width: 1024px;
+  margin: 5px 14px;
+  padding: 0 14px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 15px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.amira-logo {
+  height: 75px;
+  width: auto;
+
+  /*cursor: pointer;*/
+}
+
+/*END STYLING HEADER*/
+
+/*START STYLING CONSULTATION TAB IN FIRST BLOCK*/
+.consultation-box {
+  grid-column: 6 / 11;
+  grid-row: 1 / 3;
+  color: var(--black-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.consult-box {
+  margin: 0 auto;
+}
+
+.btn-get-in-touch {
+  display: block;
+  width: 100%;
+  color: var(--black-color);
+}
+
+.title-text-box {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.consult-title {
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.consult-title-text {
+  font-size: 18px;
+  margin-top: -10px;
+}
+
+.input-name {
+  margin-bottom: 15px;
+}
+
+/*END STYLING CONSULTATION TAB IN FIRST BLOCK*/
+
+/*START STYLING FOOTER*/
+.footer {
+  width: 1024px;
+  height: auto;
+  font-size: 18px;
+  margin-top: 40px;
+  margin-bottom: 25px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-description {
+  width: 380px;
+  height: auto;
+}
+
+.footer-logo {
+  cursor: pointer;
+}
+
+.email {
+  text-transform: lowercase;
+}
+
+.address {
+  text-transform: capitalize;
+}
+/*END STYLING FOOTER*/
+
+
+
+/*START
+------------
+APPLYING MARGINS TO NUMBERS
+*/
+.num-1 {
+  margin-bottom: -10px;
+  margin-right: 0;
+}
+
+.num-2 {
+  margin-bottom: -10px;
+  margin-right: 10px;
+}
+
+.num-3 {
+  margin-right: 25px;
+}
+
+.num-4 {
+  margin-right: -10px;
+  margin-bottom: 5px;
+}
+
+.num-5a {
+  margin-top: 10px;
+}
+
+.num-5b {
+  margin-top: -20px;
+}
+
+.num-6 {
+  margin-bottom: -12.5px;
+}
+
+.num-7 {
+  margin-bottom: 15px;
+}
+
+.num-8 {
+  margin-left: 0;
+}
+
+.num-10 {
+  margin-right: 5px;
+  margin-bottom: -10px;
+}
+
+.num-11 {
+  margin-right: -13px;
+  margin-bottom: 5px;
+}
+
+.num-12 {
+  margin-bottom: -15px;
+}
+
+.num-13 {
+  margin-bottom: -20px;
+}
+
+.num-14 {
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+
+.num-15 {
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.num-16 {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.num-17 {
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+.num-18 {
+  margin-right: -20px;
+  margin-bottom: -18px;
+}
+
+.num-19 {
+  margin-left: -10px;
+  margin-bottom: -18px;
+}
+
+.num-20a {
+  margin-bottom: -15px;
+}
+
+.num-21 {
+  margin-bottom: -15px;
+}
+
+.num-22 {
+  margin-bottom: -15px;
+}
+
+.num-23 {
+  margin-top: -5px;
+}
+
+.num-24a {
+  margin-bottom: -15px;
+  margin-left: 15px;
+}
+
+.num-24b {
+  margin-top: -5px;
+}
+
+.num-25 {
+  margin-bottom: -15px;
+  margin-left: -15px;
+}
+
+.num-26 {
+  margin-left: -15px;
+  margin-top: -10px;
+}
+
+.num-27 {
+  margin-right: -10px;
+  margin-bottom: 15px;
+}
+
+.num-28 {
+  margin-bottom: -5px;
+}
+
+.num-29 {
+  margin-left: -5px;
+}
+
+.num-30 {
+  margin-bottom: -10px;
+}
+
+.num-31 {
+  margin-right: -25px;
+  margin-bottom: 15px;
+}
+
+.num-32 {
+  margin-bottom: -15px;
+}
+
+.num-34 {
+  margin-bottom: -15px;
+  margin-right: 10px;
+}
+
+.num-35 {
+  margin-left: -5px;
+}
+
+.num-36 {
+  margin-left: -10px;
+}
+
+.num-37 {
+  margin-left: -10px;
+}
+
+.num-38 {
+  margin-bottom: -25px;
+}
+
+.num-39 {
+  margin-top: -5px;
+  margin-left: 15px;
+}
+
+.num-40 {
+  margin-bottom: -25px;
+  margin-left: -25px;
+}
+
+.num-41 {
+  margin-right: -10px;
+}
+/*END
+------------
+APPLYING MARGINS TO NUMBERS
+*/
+
+/*START
+------------
+STYLING MODALS TO NUMBERS
+*/
+
+/* #1 START CREATING MODAL AND STYLING*/
+.modal-1 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-1 {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-1;
+  animation-duration: 0.5s;
+
+  /*position: relative;*/
+  /*text-align: center;*/
+}
+
+.modal-header-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 25px;
+
+}
+
+.step {
+  font-size: 32px;
+  font-weight: 500;
+  margin-top: -15px;
+  margin-left: -10px;
+
+  
+}
+
+.modal-style {
+  background-color: #F0E68C !important;
+  border-radius: 10px;
+
+  width: 40% !important;
+  height: 25% !important;
+
+}
+
+.modal-button {
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  
+  /*display: block;*/
+  float: right;
+  border: none;
+  border: 0.5px solid black;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  
+  margin-left: 18px;
+}
+
+.modal-button:active {
+  /** Remove 3D Block Effect on Click **/
+  box-shadow: none;
+  top: 10px;
+ 
+}
+
+.modal-button:hover {
+  transition: 0.25s ease-in-out;
+  background: #033860;
+  stroke-dashoffset: -480;
+  color: white;
+  opacity: 1;
+}
+
+.modal-button:active,
+.modal-button:focus {
+  /** Remove Chrome's Ugly Yellow Outline **/
+  outline: 0;
+  background: #087ca7;
+  box-shadow: 1px 1px 0px #05b2dc,
+                2px 2px 0px #05b2dc,
+                3px 3px 0px #05b2dc,
+                4px 4px 0px #05b2dc,
+                5px 5px 0px #05b2dc,
+                6px 6px 0px #05b2dc;
+}
+
+span {
+  border: 0.5px solid black !important;
+}
+
+span:hover {
+  background: #05b2dc;
+  color: white;
+}
+
+span:visited,
+span:focus,
+span:active {
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+@keyframes modalopen-1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-1 {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  /*position: absolute;
+  top: 15px;
+  right: 15px;*/
+}
+
+.closeBtn-1:hover,
+.closeBtn-1:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* #1 END CREATING MODAL AND STYLING*/
+
+/* #2 START CREATING MODAL AND STYLING*/
+.modal-2 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-2 {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-2;
+  animation-duration: 0.5s;
+
+  width: 40%;
+  height: auto;
+  /*position: relative;*/
+}
+
+@keyframes modalopen-2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-2 {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  /*position: absolute;
+  top: 15px;
+  right: 15px;*/
+}
+
+.closeBtn-2:hover,
+.closeBtn-2:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #2 END CREATING MODAL AND STYLING*/
+
+/* #3 START CREATING MODAL AND STYLING*/
+.modal-3 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-3 {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-3;
+  animation-duration: 0.5s;
+}
+
+@keyframes modalopen-3 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-3 {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.closeBtn-3:hover,
+.closeBtn-3:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #3 END CREATING MODAL AND STYLING*/
+
+/* #4 START CREATING MODAL AND STYLING*/
+.modal-4 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-4 {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-4;
+  animation-duration: 0.5s;
+}
+
+@keyframes modalopen-4 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-4 {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.closeBtn-4:hover,
+.closeBtn-4:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #4 END CREATING MODAL AND STYLING*/
+
+/* #5 START CREATING MODAL AND STYLING*/
+.modal-5 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-5 {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-5;
+  animation-duration: 0.5s;
+}
+
+@keyframes modalopen-5 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-5 {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.closeBtn-5:hover,
+.closeBtn-5:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #5 END CREATING MODAL AND STYLING*/
+
+/* #5B START CREATING MODAL AND STYLING*/
+.modal-5b {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-5b {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-5b;
+  animation-duration: 0.5s;
+}
+
+@keyframes modalopen-5b {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-5b {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.closeBtn-5b:hover,
+.closeBtn-5b:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #5B END CREATING MODAL AND STYLING*/
+
+/* #6 START CREATING MODAL AND STYLING*/
+.modal-6 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-6 {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-6;
+  animation-duration: 0.5s;
+}
+
+@keyframes modalopen-6 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-6 {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.closeBtn-6:hover,
+.closeBtn-6:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #6 END CREATING MODAL AND STYLING*/
+
+/* #7 START CREATING MODAL AND STYLING*/
+.modal-7 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-7 {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-7;
+  animation-duration: 0.5s;
+}
+
+@keyframes modalopen-7 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-7 {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.closeBtn-7:hover,
+.closeBtn-7:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #7 END CREATING MODAL AND STYLING*/
+
+/* #8 START CREATING MODAL AND STYLING*/
+.modal-8 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-8 {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-8;
+  animation-duration: 0.5s;
+}
+
+@keyframes modalopen-8 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-8 {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.closeBtn-8:hover,
+.closeBtn-8:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #8 END CREATING MODAL AND STYLING*/
+
+/* #9a START CREATING MODAL AND STYLING*/
+.modal-9a {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-9a {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-9a;
+  animation-duration: 0.5s;
+}
+
+@keyframes modalopen-9a {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-9a {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.closeBtn-9a:hover,
+.closeBtn-9a:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #9a END CREATING MODAL AND STYLING*/
+
+/* #9b START CREATING MODAL AND STYLING*/
+.modal-9b {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-9b {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-9b;
+  animation-duration: 0.5s;
+}
+
+@keyframes modalopen-9b {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-9b {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.closeBtn-9b:hover,
+.closeBtn-9b:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #9b END CREATING MODAL AND STYLING*/
+
+/* #10 START CREATING MODAL AND STYLING*/
+.modal-10 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-10 {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-10;
+  animation-duration: 0.5s;
+}
+
+@keyframes modalopen-10 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-10 {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.closeBtn-10:hover,
+.closeBtn-10:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #10 END CREATING MODAL AND STYLING*/
+
+/* #11 START CREATING MODAL AND STYLING*/
+.modal-11 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-11 {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-11;
+  animation-duration: 0.5s;
+}
+
+@keyframes modalopen-11 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-11 {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.closeBtn-11:hover,
+.closeBtn-11:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #11 END CREATING MODAL AND STYLING*/
+
+/* #12 START CREATING MODAL AND STYLING*/
+.modal-12 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-12 {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-12;
+  animation-duration: 0.5s;
+}
+
+@keyframes modalopen-12 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-12 {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.closeBtn-12:hover,
+.closeBtn-12:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #12 END CREATING MODAL AND STYLING*/
+
+/* #13 START CREATING MODAL AND STYLING*/
+.modal-13 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-13 {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-13;
+  animation-duration: 0.5s;
+}
+
+@keyframes modalopen-13 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-13 {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.closeBtn-13:hover,
+.closeBtn-13:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #13 END CREATING MODAL AND STYLING*/
+
+/* #14 START CREATING MODAL AND STYLING*/
+.modal-14 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-14 {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-14;
+  animation-duration: 0.5s;
+}
+
+@keyframes modalopen-14 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-14 {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.closeBtn-14:hover,
+.closeBtn-14:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #14 END CREATING MODAL AND STYLING*/
+
+/* #15 START CREATING MODAL AND STYLING*/
+.modal-15 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-15 {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-15;
+  animation-duration: 0.5s;
+}
+
+@keyframes modalopen-15 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-15 {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.closeBtn-15:hover,
+.closeBtn-15:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #15 END CREATING MODAL AND STYLING*/
+
+/* #16 START CREATING MODAL AND STYLING*/
+.modal-16 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-16 {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-16;
+  animation-duration: 0.5s;
+}
+
+@keyframes modalopen-16 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-16 {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.closeBtn-16:hover,
+.closeBtn-16:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #16 END CREATING MODAL AND STYLING*/
+
+/* #17 START CREATING MODAL AND STYLING*/
+.modal-17 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-17 {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-17;
+  animation-duration: 0.5s;
+}
+
+@keyframes modalopen-17 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-17 {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.closeBtn-17:hover,
+.closeBtn-17:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #17 END CREATING MODAL AND STYLING*/
+
+/* #18 START CREATING MODAL AND STYLING*/
+.modal-18 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-18 {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-18;
+  animation-duration: 0.5s;
+}
+
+@keyframes modalopen-18 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-18 {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.closeBtn-18:hover,
+.closeBtn-18:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #18 END CREATING MODAL AND STYLING*/
+
+/* #19 START CREATING MODAL AND STYLING*/
+.modal-19 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-19 {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-19;
+  animation-duration: 0.5s;
+}
+
+@keyframes modalopen-19 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-19 {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.closeBtn-19:hover,
+.closeBtn-19:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #19 END CREATING MODAL AND STYLING*/
+
+/* #20a START CREATING MODAL AND STYLING*/
+.modal-20a {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-20a {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-20a;
+  animation-duration: 0.5s;
+}
+
+@keyframes modalopen-20a {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-20a {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.closeBtn-20a:hover,
+.closeBtn-20a:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #20a END CREATING MODAL AND STYLING*/
+
+/* #20b START CREATING MODAL AND STYLING*/
+.modal-20b {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-20b {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-20b;
+  animation-duration: 0.5s;
+}
+
+@keyframes modalopen-20b {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-20b {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.closeBtn-20b:hover,
+.closeBtn-20b:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #20b END CREATING MODAL AND STYLING*/
+
+/* #21 START CREATING MODAL AND STYLING*/
+.modal-21 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-21 {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-21;
+  animation-duration: 0.5s;
+}
+
+@keyframes modalopen-21 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-21 {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.closeBtn-21:hover,
+.closeBtn-21:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #21 END CREATING MODAL AND STYLING*/
+
+/* #22 START CREATING MODAL AND STYLING*/
+.modal-22 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-22 {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-22;
+  animation-duration: 0.5s;
+}
+
+@keyframes modalopen-22 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-22 {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.closeBtn-22:hover,
+.closeBtn-22:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #22 END CREATING MODAL AND STYLING*/
+
+/* #23 START CREATING MODAL AND STYLING*/
+.modal-23 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-23 {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-23;
+  animation-duration: 0.5s;
+}
+
+@keyframes modalopen-23 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-23 {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.closeBtn-23:hover,
+.closeBtn-23:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #23 END CREATING MODAL AND STYLING*/
+
+/* #24a START CREATING MODAL AND STYLING*/
+.modal-24a {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-24a {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-24a;
+  animation-duration: 0.5s;
+}
+
+@keyframes modalopen-24a {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-24a {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.closeBtn-24a:hover,
+.closeBtn-24a:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #24a END CREATING MODAL AND STYLING*/
+
+/* #24b START CREATING MODAL AND STYLING*/
+.modal-24b {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-24b {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-24b;
+  animation-duration: 0.5s;
+}
+
+@keyframes modalopen-24b {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-24b {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.closeBtn-24b:hover,
+.closeBtn-24b:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #24b END CREATING MODAL AND STYLING*/
+
+/* #25 START CREATING MODAL AND STYLING*/
+.modal-25 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-25 {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-25;
+  animation-duration: 0.5s;
+}
+
+@keyframes modalopen-25 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-25 {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.closeBtn-25:hover,
+.closeBtn-25:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #25 END CREATING MODAL AND STYLING*/
+
+/* #26 START CREATING MODAL AND STYLING*/
+.modal-26 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-26 {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-26;
+  animation-duration: 0.5s;
+}
+
+@keyframes modalopen-26 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-26 {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.closeBtn-26:hover,
+.closeBtn-26:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #26 END CREATING MODAL AND STYLING*/
+
+/* #27 START CREATING MODAL AND STYLING*/
+.modal-27 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-27 {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-27;
+  animation-duration: 0.5s;
+}
+
+@keyframes modalopen-27 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-27 {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.closeBtn-27:hover,
+.closeBtn-27:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #27 END CREATING MODAL AND STYLING*/
+
+/* #28 START CREATING MODAL AND STYLING*/
+.modal-28 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-28 {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-28;
+  animation-duration: 0.5s;
+}
+
+@keyframes modalopen-28 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-28 {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.closeBtn-28:hover,
+.closeBtn-28:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #28 END CREATING MODAL AND STYLING*/
+
+/* #29 START CREATING MODAL AND STYLING*/
+.modal-29 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-29 {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-29;
+  animation-duration: 0.5s;
+}
+
+@keyframes modalopen-29 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-29 {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.closeBtn-29:hover,
+.closeBtn-29:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #29 END CREATING MODAL AND STYLING*/
+
+/* #30 START CREATING MODAL AND STYLING*/
+.modal-30 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-30 {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-30;
+  animation-duration: 0.5s;
+}
+
+@keyframes modalopen-30 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-30 {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.closeBtn-30:hover,
+.closeBtn-30:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #30 END CREATING MODAL AND STYLING*/
+
+/* #31 START CREATING MODAL AND STYLING*/
+.modal-31 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-31 {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-31;
+  animation-duration: 0.5s;
+}
+
+@keyframes modalopen-31 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-31 {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.closeBtn-31:hover,
+.closeBtn-31:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #31 END CREATING MODAL AND STYLING*/
+
+/* #32 START CREATING MODAL AND STYLING*/
+.modal-32 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-32 {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-32;
+  animation-duration: 0.5s;
+}
+
+@keyframes modalopen-32 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-32 {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.closeBtn-32:hover,
+.closeBtn-32:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #32 END CREATING MODAL AND STYLING*/
+
+/* #33 START CREATING MODAL AND STYLING*/
+.modal-33 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-33 {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-33;
+  animation-duration: 0.5s;
+}
+
+@keyframes modalopen-33 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-33 {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.closeBtn-33:hover,
+.closeBtn-33:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #33 END CREATING MODAL AND STYLING*/
+
+/* #34 START CREATING MODAL AND STYLING*/
+.modal-34 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-34 {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-34;
+  animation-duration: 0.5s;
+}
+
+@keyframes modalopen-34 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-34 {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.closeBtn-34:hover,
+.closeBtn-34:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #34 END CREATING MODAL AND STYLING*/
+
+/* #35 START CREATING MODAL AND STYLING*/
+.modal-35 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-35 {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-35;
+  animation-duration: 0.5s;
+}
+
+@keyframes modalopen-35 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-35 {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.closeBtn-35:hover,
+.closeBtn-35:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #35 END CREATING MODAL AND STYLING*/
+
+/* #36 START CREATING MODAL AND STYLING*/
+.modal-36 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-36 {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-36;
+  animation-duration: 0.5s;
+}
+
+@keyframes modalopen-36 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-36 {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.closeBtn-36:hover,
+.closeBtn-36:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #36 END CREATING MODAL AND STYLING*/
+
+/* #37 START CREATING MODAL AND STYLING*/
+.modal-37 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-37 {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-37;
+  animation-duration: 0.5s;
+}
+
+@keyframes modalopen-37 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-37 {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.closeBtn-37:hover,
+.closeBtn-37:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #37 END CREATING MODAL AND STYLING*/
+
+/* #38 START CREATING MODAL AND STYLING*/
+.modal-38 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-38 {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-38;
+  animation-duration: 0.5s;
+}
+
+@keyframes modalopen-38 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-38 {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.closeBtn-38:hover,
+.closeBtn-38:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #38 END CREATING MODAL AND STYLING*/
+
+/* #39 START CREATING MODAL AND STYLING*/
+.modal-39 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-39 {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-39;
+  animation-duration: 0.5s;
+}
+
+@keyframes modalopen-39 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-39 {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.closeBtn-39:hover,
+.closeBtn-39:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #39 END CREATING MODAL AND STYLING*/
+
+/* #40 START CREATING MODAL AND STYLING*/
+.modal-40 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-40 {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-40;
+  animation-duration: 0.5s;
+
+  z-index: 3 !important;
+
+}
+
+@keyframes modalopen-40 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-40 {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.closeBtn-40:hover,
+.closeBtn-40:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #40 END CREATING MODAL AND STYLING*/
+
+/* #41 START CREATING MODAL AND STYLING*/
+.modal-41 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-41 {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-41;
+  animation-duration: 0.5s;
+}
+
+@keyframes modalopen-41 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-41 {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.closeBtn-41:hover,
+.closeBtn-41:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #41 END CREATING MODAL AND STYLING
+
+/* #42 START CREATING MODAL AND STYLING*/
+.modal-42 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.modal-content-42 {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen-42;
+  animation-duration: 0.5s;
+
+  z-index: 3 !important;
+}
+
+@keyframes modalopen-42 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn-42 {
+  font-size: 20px;
+  color: rgb(71, 70, 70);
+
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.closeBtn-42:hover,
+.closeBtn-42:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #42 END CREATING MODAL AND STYLING*/
+
+/*START POP-UP WINDOW*/
+.lightbox {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.425);
+  z-index: 2;
+
+  animation-name: pop-up;
+  animation-duration: 0.2s;
+}
+
+@keyframes pop-up {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.toolbarLB {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.closeLB {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 25px;
+  height: 25px;
+  border: none;
+  border: 0.5px solid var(--black-color);
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--black-color);
+  
+}
+
+.closeLB:hover {
+  background: #05b2dc;
+  color: white;
+}
+
+.closeLB:visited,
+.closeLB:focus,
+.closeLB:active {
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  padding-bottom: 3px;
+}
+
+.lightbox .iframeContainer {
+
+  width: 40%;
+  height: auto;
+  border: 0.5px solid black;
+  background-color: #F0E68C;
+
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+
+
+}
+
+.text-access {
+  font-size: 30px;
+  font-weight: 700;
+
+  margin-top: 45px;
+  margin-left: 35px;
+  /*-webkit-text-stroke: 0.5px white;*/
+  color: var(--black-color);
+}
+
+
+
+.start-link {
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+
+  
+  margin-right: 45px;
+  margin-top: 40px;
+  margin-bottom: 45px;
+  display: block;
+  float: right;
+  border: none;
+  border: 0.5px solid black;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  
+}
+
+.start-link:active {
+  /** Remove 3D Block Effect on Click **/
+  box-shadow: none;
+  top: 10px;
+ 
+}
+
+.start-link:hover {
+  transition: 0.25s ease-in-out;
+  background: #033860;
+  stroke-dashoffset: -480;
+  color: white;
+  opacity: 1;
+}
+
+.start-link:active,
+.start-link:focus {
+  /** Remove Chrome's Ugly Yellow Outline **/
+  outline: 0;
+  background: #087ca7;
+  box-shadow: 1px 1px 0px #05b2dc,
+                2px 2px 0px #05b2dc,
+                3px 3px 0px #05b2dc,
+                4px 4px 0px #05b2dc,
+                5px 5px 0px #05b2dc,
+                6px 6px 0px #05b2dc;
+}
+
+.lightbox.closed {
+  display: none;
+}
+
+/*END POP-UP WINDOW*/
+
+/* START BOUNCE ITEM STYLES*/
+.item-bounce {
+  background-color: #174b65;
+  color: white;
+  -webkit-animation: bounce 0.3s infinite alternate;
+  -moz-animation: bounce 0.3s infinite alternate;
+  animation: bounce 0.3s infinite alternate;
+}
+@-webkit-keyframes bounce {
+  to {
+    -webkit-transform: scale(1.300);
+  }
+}
+@-moz-keyframes bounce {
+  to {
+    -moz-transform: scale(1.300);
+  }
+}
+@keyframes bounce {
+  to {
+    transform: scale(1.300);
+  }
+}
+/* END BOUNCE ITEM STYLES*/
+
+/* START SHAKE ITEM STYLES*/
+.stop-sign:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s; 
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite; 
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+/* END SHAKE ITEM STYLES*/
